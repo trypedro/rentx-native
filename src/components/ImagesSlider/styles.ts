@@ -35,6 +35,6 @@ export const CarImageWrapper = styled.View`
 `
 
 export const CarImage = styled.Image`
-  width: 280;
+  width: 280px;
   height: 132px;
 `
