@@ -6,6 +6,7 @@ import { AntDesign } from '@expo/vector-icons'
 
 import { BackButton } from '../../components/BackButton'
 import { Car } from '../../components/Car'
+import { LoadAnimation } from '../../components/LoadAnimation'
 
 import { api } from '../../services/api'
 
@@ -26,7 +27,7 @@ import {
   CarFooterPeriod,
   CarFooterDate,
 } from './styles'
-import { Load } from '../../components/Load'
+
 
 interface CarApiI {
   user_id: string
@@ -81,7 +82,7 @@ export function MyCars() {
         <SubTitle>Conforto, segurança e praticidade</SubTitle>
       </Header>
       {loading ? (
-        <Load />
+        <LoadAnimation />
       ) : (
         <Content>
           <Appointments>
